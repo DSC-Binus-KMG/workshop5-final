@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyContactList</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="phone_contact">Phone Number Example</string>
+    <string name="name_contact">Name Example</string>
+    <string name="input_name_hint">Input your name</string>
+    <string name="input_number_hint">Input your number</string>
+    <string name="add_contact">Add Contact</string>
+</resources>
