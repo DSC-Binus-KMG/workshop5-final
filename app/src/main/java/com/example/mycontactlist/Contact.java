@@ -4,10 +4,12 @@ public class Contact {
 
     String name;
     String phoneNumber;
+    boolean favorite;
 
-    public Contact(String name, String phoneNumber) {
+    public Contact(String name, String phoneNumber, boolean favorite) {
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.favorite = favorite;
     }
 
     public String getName() {
@@ -24,5 +26,13 @@ public class Contact {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
     }
 }

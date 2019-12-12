@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.add_nav) {
-            Toast.makeText(MainActivity.this, "Hello World", Toast.LENGTH_SHORT).show();
+            startActivity(AddContactActivity.getInstance(this));
         }
         return super.onOptionsItemSelected(item);
     }

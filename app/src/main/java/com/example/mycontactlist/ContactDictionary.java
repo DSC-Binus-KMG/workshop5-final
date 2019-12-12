@@ -27,11 +27,11 @@ public class ContactDictionary {
 
     private void generateContactData() {
         contacts = new ArrayList<>();
-        contacts.add(new Contact("Anggi Maisa", "08212488****"));
-        contacts.add(new Contact("Fernando Christyanto", "0856123****"));
-        contacts.add(new Contact("Jonathan Darwin", "08136248****"));
-        contacts.add(new Contact("Naufal Prakoso", "08963213****"));
-        contacts.add(new Contact("Willson", "08963852****"));
+        contacts.add(new Contact("Anggi Maisa", "08212488****", true));
+        contacts.add(new Contact("Fernando Christyanto", "0856123****", true));
+        contacts.add(new Contact("Jonathan Darwin", "08136248****", false));
+        contacts.add(new Contact("Naufal Prakoso", "08963213****", false));
+        contacts.add(new Contact("Willson", "08963852****", true));
     }
 
 }
