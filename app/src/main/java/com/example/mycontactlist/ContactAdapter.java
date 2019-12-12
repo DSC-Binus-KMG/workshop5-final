@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder> {
@@ -16,6 +17,11 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
     private List<Contact> contacts;
     private static final int VIEWHOLDER_NOT_FAVORITE = 0;
     private static final int VIEWHOLDER_FAVORITE = 1;
+
+    public ContactAdapter() {
+        contacts = new ArrayList<>();
+    }
+
     @NonNull
     @Override
     public ContactAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

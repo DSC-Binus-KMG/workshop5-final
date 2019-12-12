@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         contactDictionary = ContactDictionary.getInstance();
         recyclerView = findViewById(R.id.recyclerView);
         contactAdapter = new ContactAdapter();
-        contactAdapter.setContacts(contactDictionary.getContacts());
+        contactAdapter.insertNewContact(contactDictionary.getContacts());
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(contactAdapter);
