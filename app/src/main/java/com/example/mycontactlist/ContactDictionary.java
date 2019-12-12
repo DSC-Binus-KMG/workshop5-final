@@ -1,5 +1,7 @@
 package com.example.mycontactlist;
 
+import android.content.Context;
+
 import java.util.ArrayList;
 
 public class ContactDictionary {
@@ -19,10 +21,6 @@ public class ContactDictionary {
 
     public ArrayList<Contact> getContacts() {
         return contacts;
-    }
-
-    public void setContacts(ArrayList<Contact> contacts) {
-        this.contacts = contacts;
     }
 
     private void generateContactData() {

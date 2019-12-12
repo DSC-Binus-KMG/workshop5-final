@@ -55,18 +55,9 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 
     protected void insertNewContact(List<Contact> insertContacts) {
         MyDiffUtilCallback myDiffutilCallback = new MyDiffUtilCallback(contacts, insertContacts);
-        DiffUtil.DiffResult diffResult =  DiffUtil.calculateDiff(myDiffutilCallback);
+        DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(myDiffutilCallback);
 
         contacts.addAll(insertContacts);
-        diffResult.dispatchUpdatesTo(this);
-    }
-
-    protected void updateContacts(List<Contact> updateContacts) {
-        MyDiffUtilCallback myDiffutilCallback = new MyDiffUtilCallback(contacts, updateContacts);
-        DiffUtil.DiffResult diffResult =  DiffUtil.calculateDiff(myDiffutilCallback);
-
-        contacts.clear();
-        contacts.addAll(updateContacts);
         diffResult.dispatchUpdatesTo(this);
     }
 
